@@ -23,7 +23,7 @@ const NavBar = () => {
           </NavLink>
         </li>
 
-        {!user && (
+        {user && (
           <>
             <li>
               <NavLink
@@ -45,7 +45,7 @@ const NavBar = () => {
           </>
         )}
 
-        {user && (
+        {!user && (
           <>
             <li>
               <NavLink
