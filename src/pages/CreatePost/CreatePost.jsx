@@ -66,7 +66,7 @@ const CreatePost = () => {
             value={tags}
           />
         </label>
-        
+
       </form>
     </div>
   );
