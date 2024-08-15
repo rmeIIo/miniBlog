@@ -8,8 +8,8 @@ import {
   where,
 } from "firebase/firestore";
 
-export const useFetchDocuments = (docCollection, serach = null, uid = null) => {
-  const [documents, setDocuments] = useState([]);
+export const useFetchDocuments = (docCollection, search = null, uid = null) => {
+  const [documents, setDocuments] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -58,5 +58,5 @@ export const useFetchDocuments = (docCollection, serach = null, uid = null) => {
     };
   });
 
-  return documents, loading, error
+  return { documents, loading, error };
 };
