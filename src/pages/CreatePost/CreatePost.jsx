@@ -45,7 +45,6 @@ const CreatePost = () => {
       createdBy: user.displayName,
     });
 
-    // TODO: redirect to homepage
     navigate('/')
   };
 
