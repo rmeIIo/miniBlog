@@ -40,7 +40,7 @@ const CreatePost = () => {
       title,
       image,
       body,
-      tags,
+      tags: tagsArray,
       uid: user.uid,
       createdBy: user.displayName,
     });

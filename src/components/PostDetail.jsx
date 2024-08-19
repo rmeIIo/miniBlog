@@ -8,16 +8,18 @@ const PostDetail = ({ post }) => {
       <img src={post.image} alt={post.title} />
       <h2>{post.title}</h2>
       <p className={styles.createdBy}>{post.createdBy}</p>
-      <div className={styles.tags}> 
-        {post.tagsArray?.map((tag) => {
+      <div className={styles.tags}>
+        {post.tags.map((tag) => (
           <p key={tag}>
             <span>#</span>
             {tag}
-          </p>;
-        })}
+          </p>
+        ))}
       </div>
 
-      <Link to={`/posts/${post.id}`} className="btn btn-outline">Ler</Link>
+      <Link to={`/posts/${post.id}`} className="btn btn-outline">
+        Ler
+      </Link>
     </div>
   );
 };
